@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VwJ-L8-uue">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VwJ-L8-uue">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +11,7 @@
         <!--Grid-->
         <scene sceneID="Sfc-II-C1M">
             <objects>
-                <viewController id="VwJ-L8-uue" customClass="GridViewController" customModule="FITogram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VwJ-L8-uue" customClass="GridViewController" customModule="Mendelugram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="twH-Pf-ws5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +38,7 @@
                         <viewLayoutGuide key="safeArea" id="op8-AU-yFc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Grid" image="grid-tab-bar-icon" selectedImage="grid-tab-bar-icon-selected" id="qVL-7Z-swV"/>
-                    <navigationItem key="navigationItem" id="O5s-uL-kp2" customClass="FITNavigationItem" customModule="FITogram" customModuleProvider="target"/>
+                    <navigationItem key="navigationItem" id="O5s-uL-kp2" customClass="NavigationItem" customModule="Mendelugram" customModuleProvider="target"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="collectionView" destination="UbR-SK-crK" id="S17-0z-JUF"/>

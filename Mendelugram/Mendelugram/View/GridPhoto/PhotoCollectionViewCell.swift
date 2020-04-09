@@ -20,3 +20,11 @@ class PhotoCollectionViewCell: UICollectionViewCell, NibNameIdentifiable {
     }
 
 }
+
+extension PhotoCollectionViewCell {
+
+    func configure(with viewModel: PhotoViewModeling) {
+        configure(with: PhotoCollectionViewCell.Input(photo: viewModel.photo))
+    }
+
+}

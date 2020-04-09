@@ -1,9 +1,15 @@
+//
+//  PhotoDetailViewController.swift
+//  Mendelugram
+//
+//  Created by Pacek on 21/04/2019.
+//
 
 import UIKit
 
 class PhotoDetailViewController: UIViewController {
 
-    var photo: Photo!
+    var viewModel: PhotoViewModeling!
 
     enum Section: Int, CaseIterable {
         case photo
@@ -24,7 +30,7 @@ class PhotoDetailViewController: UIViewController {
 private extension PhotoDetailViewController {
 
     func setup() {
-        title = "\(photo.author.username)'s photo"
+        title = viewModel.title
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(PhotoTableViewCell.nib, forCellReuseIdentifier: PhotoTableViewCell.identifier)
         tableView.register(CommentTableViewCell.nib, forCellReuseIdentifier: CommentTableViewCell.identifier)
@@ -52,7 +58,7 @@ extension PhotoDetailViewController: UITableViewDataSource {
         case .photo, .description:
             return 1
         case .comments:
-            return photo.comments.count
+            return viewModel.numberOfComments()
         }
     }
 
@@ -61,35 +67,16 @@ extension PhotoDetailViewController: UITableViewDataSource {
         switch section {
         case .photo:
             let cell = tableView.dequeueReusableCell(withIdentifier: PhotoTableViewCell.identifier, for: indexPath) as! PhotoTableViewCell
-            cell.configure(
-                with: PhotoTableViewCell.Input(
-                    avatar: UIImage(avatarId: photo.author.avatarId),
-                    authorName: photo.author.name,
-                    locationName: photo.locationName,
-                    photo: UIImage(photoId: photo.photoId)
-                )
-            )
+            cell.configure(with: viewModel)
             return cell
         case .description:
             let cell = tableView.dequeueReusableCell(withIdentifier: PhotoDescriptionTableViewCell.identifier, for: indexPath) as! PhotoDescriptionTableViewCell
-            cell.configure(
-                with: PhotoDescriptionTableViewCell.Input(
-                    likesCount: photo.likesCount,
-                    username: photo.author.username,
-                    description: photo.description
-                )
-            )
+            cell.configure(with: viewModel)
             return cell
         case .comments:
-            let comment = photo.comments[indexPath.row]
+            let comment = viewModel.comment(at: indexPath.item)
             let cell = tableView.dequeueReusableCell(withIdentifier: CommentTableViewCell.identifier, for: indexPath) as! CommentTableViewCell
-            cell.configure(
-                with: CommentTableViewCell.Input(
-                    avatar: UIImage(avatarId: comment.author.avatarId),
-                    username: comment.author.username,
-                    comment: comment.text
-                )
-            )
+            cell.configure(with: comment)
             return cell
         }
     }
