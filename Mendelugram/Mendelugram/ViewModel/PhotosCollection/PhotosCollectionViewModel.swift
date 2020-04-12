@@ -24,8 +24,8 @@ class PhotosCollectionViewModel: PhotosCollectionViewModeling {
         return photos.count
     }
 
-    func photo(at index: Int) -> PhotoViewModeling {
-        return PhotoViewModel(model: photos[index])
+    func photo(at index: Int) -> Photo {
+        return photos[index]
     }
 
 }

@@ -13,6 +13,6 @@ protocol PhotosCollectionViewModeling {
 
     func updatePhotos()
     func numberOfPhotos() -> Int
-    func photo(at index: Int) -> PhotoViewModeling
+    func photo(at index: Int) -> Photo
 
 }
