@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Instagram
 //
-//  Created by Jan Misar on 23/02/2020.
-//  Copyright © 2020 ČVUT. All rights reserved.
+//  Created by Jan Pacek on 23/02/2020.
+//  Copyright © 2020 STRV. All rights reserved.
 //
 
 import UIKit
