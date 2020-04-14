@@ -9,7 +9,7 @@ import UIKit
 
 class GridViewController: UIViewController {
 
-    private let viewModel = PhotosCollectionViewModel()
+    var viewModel: PhotosCollectionViewModeling!
 
     @IBOutlet private weak var collectionView: UICollectionView!
 

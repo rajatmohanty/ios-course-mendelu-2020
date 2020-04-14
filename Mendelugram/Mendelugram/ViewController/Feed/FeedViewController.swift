@@ -9,7 +9,7 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
-    private let viewModel = PhotosCollectionViewModel()
+    var viewModel: PhotosCollectionViewModeling!
 
     @IBOutlet private weak var tableView: UITableView!
 

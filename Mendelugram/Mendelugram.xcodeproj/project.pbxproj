@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15464A872445CD6D00A6A453 /* DependencyResolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15464A862445CD6D00A6A453 /* DependencyResolving.swift */; };
+		15464A892445D6A300A6A453 /* DefaultDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15464A882445D6A300A6A453 /* DefaultDependencyContainer.swift */; };
 		884C7E7E24028AAB00BA95E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C7E7D24028AAB00BA95E3 /* SceneDelegate.swift */; };
 		EF194B44243F4AED00CC1267 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF194B42243F4AED00CC1267 /* NavigationItem.swift */; };
 		EF194B45243F4AED00CC1267 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF194B43243F4AED00CC1267 /* NavigationController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15464A862445CD6D00A6A453 /* DependencyResolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyResolving.swift; sourceTree = "<group>"; };
+		15464A882445D6A300A6A453 /* DefaultDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDependencyContainer.swift; sourceTree = "<group>"; };
 		884C7E7824028AAB00BA95E3 /* Mendelugram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mendelugram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884C7E7D24028AAB00BA95E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		884C7E8924028AAE00BA95E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15464A852445CD3400A6A453 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				15464A862445CD6D00A6A453 /* DependencyResolving.swift */,
+				15464A882445D6A300A6A453 /* DefaultDependencyContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		884C7E6F24028AAA00BA95E3 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +121,7 @@
 		884C7E7A24028AAB00BA95E3 /* Mendelugram */ = {
 			isa = PBXGroup;
 			children = (
+				15464A852445CD3400A6A453 /* DI */,
 				EF9AE61524129A76001F8320 /* Application */,
 				EF9AE61B24129A77001F8320 /* Shared */,
 				EF9AE62424129A77001F8320 /* Model */,
@@ -383,9 +397,11 @@
 				EF9AE65A24129A77001F8320 /* NibNameIdentifiable.swift in Sources */,
 				EF9AE65724129A77001F8320 /* UIImage.swift in Sources */,
 				EF9AE66024129A77001F8320 /* CommentTableViewCell.swift in Sources */,
+				15464A872445CD6D00A6A453 /* DependencyResolving.swift in Sources */,
 				EF194B57243F4FA800CC1267 /* PhotosCollectionViewModel.swift in Sources */,
 				EF9AE67624129A77001F8320 /* GridViewController.swift in Sources */,
 				EF9AE65E24129A77001F8320 /* PhotoServicing.swift in Sources */,
+				15464A892445D6A300A6A453 /* DefaultDependencyContainer.swift in Sources */,
 				EF194B44243F4AED00CC1267 /* NavigationItem.swift in Sources */,
 				EF9AE66324129A77001F8320 /* PhotoCollectionViewCell.swift in Sources */,
 				EF9AE67424129A77001F8320 /* MainTabBarViewController.swift in Sources */,

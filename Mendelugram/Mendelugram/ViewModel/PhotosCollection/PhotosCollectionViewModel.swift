@@ -12,9 +12,14 @@ class PhotosCollectionViewModel: PhotosCollectionViewModeling {
     var didUpdatePhotos: (() -> Void)?
 
     private var photos = [Photo]()
+    private let photosService: PhotosServicing
 
+    init(photosService: PhotosServicing) {
+        self.photosService = photosService
+    }
+    
     func updatePhotos() {
-        PhotosService.shared.fetchPhotos { [weak self] photos in
+        photosService.fetchPhotos { [weak self] photos in
             self?.photos = photos
             self?.didUpdatePhotos?()
         }
