@@ -3,6 +3,7 @@ import UIKit
 
 class PhotoDetailViewController: UIViewController {
 
+    var coordinator: PhotoDetailCoordinator?
     var photo: Photo!
 
     enum Section: Int, CaseIterable {

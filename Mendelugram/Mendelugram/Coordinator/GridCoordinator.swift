@@ -1,0 +1,35 @@
+//
+//  GridCoordinator.swift
+//  Mendelugram
+//
+//  Created by Lukáš Tesař on 14/04/2020.
+//  Copyright © 2020 ČVUT. All rights reserved.
+//
+
+import UIKit
+
+class GridCoordinator: Coordinating {
+
+    private let resolver: DependencyResolving
+    private weak var navController: UINavigationController?
+
+    init(navController: UINavigationController, resolver: DependencyResolving) {
+        self.navController = navController
+        self.resolver = resolver
+    }
+
+    func begin() -> UIViewController {
+        let viewController = resolver.resolveGridViewController()
+        viewController.coordinator = self
+        return viewController
+    }
+    
+    func select(photo: Photo) {
+        let viewController = PhotoDetailCoordinator(photo: photo, resolver: resolver).begin()
+        navController?.pushViewController(viewController, animated: true)
+    }
+
+    deinit {
+        print("GridCoordinator deinit")
+    }
+}

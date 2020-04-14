@@ -9,6 +9,7 @@ import UIKit
 
 class GridViewController: UIViewController {
 
+    var coordinator: GridCoordinator?
     var viewModel: PhotosCollectionViewModeling!
 
     @IBOutlet private weak var collectionView: UICollectionView!
@@ -62,16 +63,7 @@ extension GridViewController: UICollectionViewDataSource {
 }
 
 extension GridViewController: UICollectionViewDelegate {
-
-    // 💩 duplicitní kód z FeedViewController
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // 💩 GridViewController musí vědět o tom jak vytvořit PhotoDetailViewController
-        let storyboard = UIStoryboard(name: "PhotoDetail", bundle: nil)
-        let viewController = storyboard.instantiateInitialViewController() as! PhotoDetailViewController
-        viewController.hidesBottomBarWhenPushed = true
-        viewController.photo = viewModel.photo(at: indexPath.row)
-        // 💩 GridViewController předpokládá, že je uvnitř UINavigationController
-        navigationController?.pushViewController(viewController, animated: true)
+        coordinator?.select(photo: viewModel.photo(at: indexPath.row))
     }
-
 }

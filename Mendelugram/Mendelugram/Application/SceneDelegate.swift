@@ -11,19 +11,16 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var rootCoordinator: RootCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let rootViewController = createMainTabBarController()
-        rootViewController.viewControllers = [
-            createFeedViewController(),
-            createGridViewController()
-        ]
+        rootCoordinator = RootCoordinator(resolver: DefaultDependencyContainer())
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = rootViewController
+        window?.rootViewController = rootCoordinator?.begin()
         window?.makeKeyAndVisible()
     }
 
@@ -55,32 +52,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-}
-
-private extension SceneDelegate {
-    
-    func createMainTabBarController() -> UITabBarController {
-        return UIStoryboard(name: "MainTabBar", bundle: nil).instantiateInitialViewController() as! MainTabBarViewController
-    }
-    
-    func createGridViewController() -> UIViewController {
-        let gridViewController = UIStoryboard(name: "Grid", bundle: nil).instantiateInitialViewController() as! GridViewController
-
-        let navigationViewController = NavigationController()
-        navigationViewController.viewControllers = [
-            gridViewController
-        ]
-        return navigationViewController
-    }
-    
-    func createFeedViewController() -> UIViewController {
-        let feedViewController = UIStoryboard(name: "Feed", bundle: nil).instantiateInitialViewController() as! FeedViewController
-
-        let navigationViewController = NavigationController()
-        navigationViewController.viewControllers = [
-            feedViewController
-        ]
-        return navigationViewController
-    }
-    
 }
