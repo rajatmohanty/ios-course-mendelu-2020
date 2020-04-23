@@ -9,8 +9,6 @@ import UIKit
 
 class PhotosService: PhotosServicing {
     
-    static let shared: PhotosServicing = PhotosService()
-
     func fetchPhotos(completion: @escaping ([Photo]) -> Void) {
         // authors
         let tmbk = Author(username: "tmbkofficial", name: "TMBK", avatarId: "tmbk")
@@ -195,5 +193,4 @@ class PhotosService: PhotosServicing {
             completion(photos)
         }
     }
-
 }

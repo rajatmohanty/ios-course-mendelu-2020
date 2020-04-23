@@ -9,7 +9,8 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
-    private let viewModel = PhotosCollectionViewModel()
+    var coordinator: FeedCoordinator?
+    var viewModel: PhotosCollectionViewModeling!
 
     @IBOutlet private weak var tableView: UITableView!
 
@@ -57,17 +58,8 @@ extension FeedViewController: UITableViewDataSource {
 
 }
 
-// 💩 duplicitní kód z GridViewController
 extension FeedViewController: UITableViewDelegate {
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // 💩 FeedViewController musí vědět o tom jak vytvořit PhotoDetailViewController
-        let storyboard = UIStoryboard(name: "PhotoDetail", bundle: nil)
-        let viewController = storyboard.instantiateInitialViewController() as! PhotoDetailViewController
-        viewController.hidesBottomBarWhenPushed = true
-        viewController.photo = viewModel.photo(at: indexPath.row)
-        // 💩 FeedViewController předpokládá, že je uvnitř UINavigationController
-        navigationController?.pushViewController(viewController, animated: true)
+        coordinator?.select(photo: viewModel.photo(at: indexPath.row))
     }
-
 }
