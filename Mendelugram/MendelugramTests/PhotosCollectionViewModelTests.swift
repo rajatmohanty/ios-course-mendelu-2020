@@ -3,7 +3,7 @@
 //  MendelugramTests
 //
 //  Created by Tomas Cejka on 4/23/20.
-//  Copyright © 2020 ČVUT. All rights reserved.
+//  Copyright © 2020 Mendelu. All rights reserved.
 //
 
 import XCTest
