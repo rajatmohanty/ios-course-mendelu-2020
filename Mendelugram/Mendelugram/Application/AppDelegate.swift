@@ -3,7 +3,7 @@
 //  Instagram
 //
 //  Created by Jan Misar on 23/02/2020.
-//  Copyright © 2020 ČVUT. All rights reserved.
+//  Copyright © 2020 Mendelu. All rights reserved.
 //
 
 import UIKit
