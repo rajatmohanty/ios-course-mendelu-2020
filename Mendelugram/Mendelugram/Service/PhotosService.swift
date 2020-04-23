@@ -193,5 +193,4 @@ class PhotosService: PhotosServicing {
             completion(photos)
         }
     }
-
 }
