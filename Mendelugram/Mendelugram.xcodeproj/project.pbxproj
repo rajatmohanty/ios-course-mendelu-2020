@@ -14,6 +14,8 @@
 		15464A902445DC9F00A6A453 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15464A8F2445DC9F00A6A453 /* FeedCoordinator.swift */; };
 		15464A922445DCBB00A6A453 /* GridCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15464A912445DCBB00A6A453 /* GridCoordinator.swift */; };
 		15464A942445E02400A6A453 /* PhotoDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15464A932445E02400A6A453 /* PhotoDetailCoordinator.swift */; };
+		846E6027245083B80093139F /* MendelugramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E6026245083B80093139F /* MendelugramTests.swift */; };
+		846E6035245083C90093139F /* MendelugramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E6034245083C90093139F /* MendelugramUITests.swift */; };
 		884C7E7E24028AAB00BA95E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C7E7D24028AAB00BA95E3 /* SceneDelegate.swift */; };
 		EF194B44243F4AED00CC1267 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF194B42243F4AED00CC1267 /* NavigationItem.swift */; };
 		EF194B45243F4AED00CC1267 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF194B43243F4AED00CC1267 /* NavigationController.swift */; };
@@ -48,6 +50,23 @@
 		EF9AE67624129A77001F8320 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE65124129A77001F8320 /* GridViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		846E6029245083B80093139F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 884C7E7024028AAB00BA95E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 884C7E7724028AAB00BA95E3;
+			remoteInfo = Mendelugram;
+		};
+		846E6037245083C90093139F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 884C7E7024028AAB00BA95E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 884C7E7724028AAB00BA95E3;
+			remoteInfo = Mendelugram;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		15464A862445CD6D00A6A453 /* DependencyResolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyResolving.swift; sourceTree = "<group>"; };
 		15464A882445D6A300A6A453 /* DefaultDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDependencyContainer.swift; sourceTree = "<group>"; };
@@ -56,6 +75,12 @@
 		15464A8F2445DC9F00A6A453 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 		15464A912445DCBB00A6A453 /* GridCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCoordinator.swift; sourceTree = "<group>"; };
 		15464A932445E02400A6A453 /* PhotoDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailCoordinator.swift; sourceTree = "<group>"; };
+		846E6024245083B80093139F /* MendelugramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MendelugramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		846E6026245083B80093139F /* MendelugramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MendelugramTests.swift; sourceTree = "<group>"; };
+		846E6028245083B80093139F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846E6032245083C90093139F /* MendelugramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MendelugramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		846E6034245083C90093139F /* MendelugramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MendelugramUITests.swift; sourceTree = "<group>"; };
+		846E6036245083C90093139F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		884C7E7824028AAB00BA95E3 /* Mendelugram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mendelugram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884C7E7D24028AAB00BA95E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		884C7E8924028AAE00BA95E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +118,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		846E6021245083B80093139F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846E602F245083C90093139F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		884C7E7524028AAB00BA95E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,10 +163,30 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		846E6025245083B80093139F /* MendelugramTests */ = {
+			isa = PBXGroup;
+			children = (
+				846E6026245083B80093139F /* MendelugramTests.swift */,
+				846E6028245083B80093139F /* Info.plist */,
+			);
+			path = MendelugramTests;
+			sourceTree = "<group>";
+		};
+		846E6033245083C90093139F /* MendelugramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				846E6034245083C90093139F /* MendelugramUITests.swift */,
+				846E6036245083C90093139F /* Info.plist */,
+			);
+			path = MendelugramUITests;
+			sourceTree = "<group>";
+		};
 		884C7E6F24028AAA00BA95E3 = {
 			isa = PBXGroup;
 			children = (
 				884C7E7A24028AAB00BA95E3 /* Mendelugram */,
+				846E6025245083B80093139F /* MendelugramTests */,
+				846E6033245083C90093139F /* MendelugramUITests */,
 				884C7E7924028AAB00BA95E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				884C7E7824028AAB00BA95E3 /* Mendelugram.app */,
+				846E6024245083B80093139F /* MendelugramTests.xctest */,
+				846E6032245083C90093139F /* MendelugramUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -337,6 +398,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		846E6023245083B80093139F /* MendelugramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846E602D245083B80093139F /* Build configuration list for PBXNativeTarget "MendelugramTests" */;
+			buildPhases = (
+				846E6020245083B80093139F /* Sources */,
+				846E6021245083B80093139F /* Frameworks */,
+				846E6022245083B80093139F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				846E602A245083B80093139F /* PBXTargetDependency */,
+			);
+			name = MendelugramTests;
+			productName = MendelugramTests;
+			productReference = 846E6024245083B80093139F /* MendelugramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		846E6031245083C90093139F /* MendelugramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846E6039245083C90093139F /* Build configuration list for PBXNativeTarget "MendelugramUITests" */;
+			buildPhases = (
+				846E602E245083C90093139F /* Sources */,
+				846E602F245083C90093139F /* Frameworks */,
+				846E6030245083C90093139F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				846E6038245083C90093139F /* PBXTargetDependency */,
+			);
+			name = MendelugramUITests;
+			productName = MendelugramUITests;
+			productReference = 846E6032245083C90093139F /* MendelugramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		884C7E7724028AAB00BA95E3 /* Mendelugram */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 884C7E8C24028AAE00BA95E3 /* Build configuration list for PBXNativeTarget "Mendelugram" */;
@@ -360,10 +457,18 @@
 		884C7E7024028AAB00BA95E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "ČVUT";
 				TargetAttributes = {
+					846E6023245083B80093139F = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 884C7E7724028AAB00BA95E3;
+					};
+					846E6031245083C90093139F = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 884C7E7724028AAB00BA95E3;
+					};
 					884C7E7724028AAB00BA95E3 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -383,11 +488,27 @@
 			projectRoot = "";
 			targets = (
 				884C7E7724028AAB00BA95E3 /* Mendelugram */,
+				846E6023245083B80093139F /* MendelugramTests */,
+				846E6031245083C90093139F /* MendelugramUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		846E6022245083B80093139F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846E6030245083C90093139F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		884C7E7624028AAB00BA95E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,6 +529,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		846E6020245083B80093139F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846E6027245083B80093139F /* MendelugramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846E602E245083C90093139F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846E6035245083C90093139F /* MendelugramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		884C7E7424028AAB00BA95E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,6 +583,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		846E602A245083B80093139F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 884C7E7724028AAB00BA95E3 /* Mendelugram */;
+			targetProxy = 846E6029245083B80093139F /* PBXContainerItemProxy */;
+		};
+		846E6038245083C90093139F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 884C7E7724028AAB00BA95E3 /* Mendelugram */;
+			targetProxy = 846E6037245083C90093139F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		EF9AE61724129A76001F8320 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -466,6 +616,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		846E602B245083B80093139F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MendelugramTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cz.mendelu.MendelugramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mendelugram.app/Mendelugram";
+			};
+			name = Debug;
+		};
+		846E602C245083B80093139F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MendelugramTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cz.mendelu.MendelugramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mendelugram.app/Mendelugram";
+			};
+			name = Release;
+		};
+		846E603A245083C90093139F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MendelugramUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cz.mendelu.MendelugramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mendelugram;
+			};
+			name = Debug;
+		};
+		846E603B245083C90093139F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MendelugramUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cz.mendelu.MendelugramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mendelugram;
+			};
+			name = Release;
+		};
 		884C7E8A24028AAE00BA95E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -625,6 +853,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		846E602D245083B80093139F /* Build configuration list for PBXNativeTarget "MendelugramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846E602B245083B80093139F /* Debug */,
+				846E602C245083B80093139F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		846E6039245083C90093139F /* Build configuration list for PBXNativeTarget "MendelugramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846E603A245083C90093139F /* Debug */,
+				846E603B245083C90093139F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		884C7E7324028AAB00BA95E3 /* Build configuration list for PBXProject "Mendelugram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
