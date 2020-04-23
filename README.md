@@ -12,7 +12,7 @@ Transition from MVC to MVVM architecture.
 * Start branch: `1-mvvm-start`
 
 
-## Lecture 2: Coordinators & dependency injection
+## Lecture 2: Coordinators & DI
 
 Add coordinators and dependency injection to the MVVM architecture.
 
