@@ -16,7 +16,7 @@ Transition from MVC to MVVM architecture.
 
 Add coordinators and dependency injection to the MVVM architecture.
 
-- Video lecture: TBD
+- Video lecture: https://drive.google.com/file/d/18eAHnazmujFSeSb5zEnpGYrcyGYyM36w/view
 - Start branch: `2-coordinators-start`
 
 ## Lecture 3: Testing
