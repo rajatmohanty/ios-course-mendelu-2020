@@ -23,5 +23,5 @@ Add coordinators and dependency injection to the MVVM architecture.
 
 Add unit and UI tests to the demo app.
 
-- Video lecture: TBD
+- Video lecture: https://drive.google.com/file/d/1LXj_v73RVlrimwpNu2qaT72XwkhKPBb4/view
 - Start branch: `3-testing-start`
